@@ -1,5 +1,5 @@
 # quotes-tableview-diffable-data-source
-Create Quotes app using xcodegen and table view diffable data source
+Creates Quotes app using xcodegen and table view diffable data source
 
 
 This project is created using xcodegen. Run in CLI:
