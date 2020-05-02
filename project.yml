@@ -1,0 +1,39 @@
+name: Quotes
+
+############
+# Options
+############
+
+options:
+  minimumXcodeGenVersion: 2.15.1
+  bundleIdPrefix: com.aaina
+  groupSortPosition: none
+  generateEmptyDirectories: true
+  deploymentTarget: 
+    iOS: "13.0"
+
+targets:
+  Quotes:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: Quotes
+    info:
+      path: Quotes/Info.plist
+      properties:
+             UIApplicationSceneManifest:
+                    UIApplicationSupportsMultipleScenes: false
+                    UISceneConfigurations:
+                        UIWindowSceneSessionRoleApplication:
+                           - UISceneConfigurationName: Default Configuration
+                             UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
+             UILaunchStoryboardName: LaunchScreen
+
+############
+# Configs
+
+############
+
+configs:
+  Debug: debug
+  Release: release
