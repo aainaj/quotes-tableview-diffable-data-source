@@ -31,8 +31,8 @@ final class QuotesView: UIView {
         var snapshot = NSDiffableDataSourceSnapshot<Author, QuoteViewData>()
         snapshot.appendSections(sections)
         
-        dictionary.forEach { key, value in
-            snapshot.appendItems(value.array, toSection: key)
+        dictionary.forEach { author, quotes in
+            snapshot.appendItems(quotes.array, toSection: author)
         }
         dataSource.apply(snapshot, animatingDifferences: true)
     }
