@@ -81,6 +81,8 @@ private extension QuotesView {
             cellProvider: { tableView, indexPath, quote in
                 let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self), for: indexPath)
                 cell.textLabel?.text = quote.text
+                cell.textLabel?.numberOfLines = 0
+                cell.textLabel?.lineBreakMode = .byWordWrapping
                 return cell
             }
         )
