@@ -8,3 +8,6 @@ This project is created using xcodegen. Run in CLI:
 It will create .xcodeproj from project.yml
 
 This app lists quotes from json which is cloned from https://type.fit/api/quotes. I have used UITableViewDiffable data source to render cells and supply data.
+
+
+![Quotes App](featuredImage.png)
