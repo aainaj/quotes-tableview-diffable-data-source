@@ -17,8 +17,7 @@ final class QuotesPresenter {
     
     func appendQuote() {
         let viewData = QuoteViewData(text: "Live and Let live")
-//        if !(quotesDict[anonymousAuthor]?.first(where: { $0.hashValue == viewData.hashValue }) ?? false) {
-            quotesDict[anonymousAuthor]?.insert(viewData)
+        quotesDict[anonymousAuthor]?.insert(viewData)
     }
 }
 
