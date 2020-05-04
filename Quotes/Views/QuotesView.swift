@@ -16,7 +16,7 @@ final class QuotesView: UIView {
         return view
     }()
     
-    private lazy var dataSource = makeDataSource()
+    private lazy var dataSource = configureDataSource()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -75,7 +75,7 @@ private extension QuotesView {
 
 //MARK: Prepare data source
 private extension QuotesView {
-    func makeDataSource() -> UITableViewDiffableDataSource<Author, QuoteViewData> {
+    func configureDataSource() -> UITableViewDiffableDataSource<Author, QuoteViewData> {
         return QuotesViewDiffableDataSource(
             tableView: tableView,
             cellProvider: { tableView, indexPath, quote in
